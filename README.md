@@ -17,21 +17,6 @@ Input: Grayscale dental X-ray images
 
 Output: Binary mask highlighting caries regions
 
-Dataset Structure
-
-project_root/
-│
-├── data_set/
-│   ├── images_cut/         # Input dental X-ray images (.png or .jpg)
-│   └── labels_cut/         # Corresponding segmentation masks
-│
-├── UNetEfficientnetB0-best.pth   # Best model checkpoint (saved during training)
-├── UNetEfficientnetB0-last.pth   # Last epoch checkpoint
-├── log.txt                       # Training log (loss and metrics)
-├── efficientnet-b0.png           # Training/Validation loss & IoU curves
-└── ...
-Masks must be binary (1 = caries, 0 = background)
-
 Training
 The training pipeline includes:
 
